@@ -1,15 +1,26 @@
 ##     Codebook
+The data used is from
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+### Process
+The following  was used to tidy the data and summarise the required information 
+1. Merge the training and the test sets to create one data set.
+1. Extracts only the measurements on the mean and standard deviation for each measurement.
+1. Uses descriptive activity names to name the activities in the data set.
+1. Appropriately labels the data set with descriptive variable names.
+1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each  subject.
+
 The variables in the analyzed data set contain mean and standard deviation values for tri-axial measurements (X,Y,Z axes) of body and gravity acceleration components. 
 
-Each value in the analyzed set comprises the average of those mean and standard deviation measurements across samples for each subject and activity. For example, tBodyAcc_mean_[XYZ]_avg and tBodyAcc_std_[XYZ]_avg.
+Each value in the analyzed set comprises the average of those mean and standard deviation measurements across samples for each subject and activity. 
 
-Similarly, mean and standard deviation of time-derived acceleration signals, such as Jerk and angular velocity (Gyro) were summarized along each axis in, e.g. tBodyAccJerk_mean_[XYZ]_avg and tBodyAccJerk_std_[XYZ]_avg.
+Similarly, mean and standard deviation of time-derived acceleration signals, such as Jerk and angular velocity (Gyro) were summarized along each axis.
 
 Euclidean norm computations were performed to determine the magnitude of the three-dimensional signals and their means and standard deviations appear in variables containing 'Mag', e.g. tBodyAccMag_mean_avg
 
-Values with the 'f' prefix represent the average of FFT (Fast Fourier Transforms) of the original time-domain measurements.
+Values with the time-domain prefix represent the average of FFT (Fast Fourier Transforms)
 
-The complete list of variables:
+### The complete list of variables:
 1. timeDomainBodyAccelerometerMeanX
 1. timeDomainBodyAccelerometerMeanY
 1. timeDomainBodyAccelerometerMeanZ
