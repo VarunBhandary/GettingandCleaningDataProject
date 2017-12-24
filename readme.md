@@ -1,5 +1,5 @@
 # Getting and Cleaning Data - Run Analysis R Script Project
-## by Varun Bhandary
+###### by Varun Bhandary
 ###### 24 December 2017
 
 
@@ -11,7 +11,7 @@
 1. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each  subject.
 
 
-######      Codebook
+##     Codebook
 The variables in the analyzed data set contain mean and standard deviation values for tri-axial measurements (X,Y,Z axes) of body and gravity acceleration components. 
 
 Each value in the analyzed set comprises the average of those mean and standard deviation measurements across samples for each subject and activity. For example, tBodyAcc_mean_[XYZ]_avg and tBodyAcc_std_[XYZ]_avg.
